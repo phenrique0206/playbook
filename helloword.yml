@@ -1,0 +1,8 @@
+---
+- name: Ansible hello world
+  hosts: all
+  tasks:
+    - name: Criar um arquivo
+      copy:
+        content: hello world
+        dest: /tmp/teste
